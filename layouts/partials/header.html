@@ -48,6 +48,11 @@
                                 <i class="fa fa-stack-overflow"></i>
                             </a>
                         {{ end }}
+                        {{ with .Site.Params.codementor }}
+                            <a class="button-square button-social hint--top" data-hint="CodeMentor" title="CodeMentor" href="{{ . }}">
+                                <img src="https://cdn.codementor.io/assets/icon_001_5-4be245c01846d3d9f3b66c50e37cebd3.png" style="height:17px; margin: 3px 0">
+                            </a>
+                        {{ end }}
                         {{ with .Site.Params.linkedin }}
                             <a class="button-square button-social hint--top" data-hint="LinkedIn" title="LinkedIn" href="{{ . }}">
                                 <i class="fa fa-linkedin"></i>
